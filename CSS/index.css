@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,300;1,500&family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Chakra+Petch:ital,wght@1,300;1,500&family=Tilt+Neon&display=swap');
+
+
+
+/*   HEADER   */
+header {
+  background-color: #22252c;
+  margin: 0;
+  padding: 0
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar_logo {
+  max-width: 300px;
+}
+
+img {
+  width: 100%;
+}
+
+.navbar_main {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  gap: 30px;
+}
+
+.navbar_item {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 20px;
+  position: relative;
+}
+
+.navbar_link {
+  text-decoration: none;
+  color: white;
+  padding: 8px;
+  display: inline-block;
+  transition: background .3s ease-in-out;
+  position: relative;
+}
+
+.navbar_link:hover {
+  background-color: brown;
+}
+
+.with-icon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.with-submenu:hover .submenu {
+  display: block;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: #22252c;
+  left: 0px;
+  top: 100%;
+  min-width: 150px;
+  padding: 10px 0;
+  z-index: 1;
+}
+
+.submenu_item {
+  display: block;
+  padding: 8px 20px;
+  
+}
+
+.submenu_link {
+  text-decoration: none;
+  color: white;
+}
+
+.submenu_link:hover {
+  background-color: brown;
+  transition: background .3s ease-in-out;
+}
+
+
+
+/*   HERO   */
+.hero {
+  background-image: url(../images/banner/funkos-banner.jpg);
+  padding: 130px;
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.hero:before {
+  content: '';
+  background-color: rgb(0, 0, 0, 0);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(2px) brightness(.9);
+}
+
+.hero_content {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: white;
+  gap: 15px;
+  padding: 0;
+  margin-left: 9%;
+  align-items: start;
+  z-index: 2;
+  position: relative;
+}
+
+.hero_title {
+  font-family: 'Tilt Neon', sans-serif;
+  font-size: 34px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.hero_text {
+  font-family: 'Tilt Neon', sans-serif;
+  font-size: 18px;
+  margin: 12px 0;
+}
+
+.hero_link {
+  display: inline-block;
+  font-family: 'Alumni Sans Collegiate One', sans-serif;
+  font-size: 22px;
+  padding: 12px 50px;
+  text-decoration: none;
+  letter-spacing: 5px;
+  color: #000000;
+  background-color: #fff;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  box-shadow:  0 0 5px brown,  0 0 5px brown inset;
+}
+
+.hero_link:before {
+  height: 0%;
+  width: 2px;
+}
+
+.hero_link:hover {
+  color: brown;
+  box-shadow: inset 0 0 10px brown, 0 0 20px brown inset, 0 0 20px brown inset;
+}
+
+
+
+/*   COLLECTIONS   */
+.collection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.collection:nth-child(2) .collection_picture {
+  order: -1;
+}
+
+.collection_content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: start;
+}
+
+.collection_title {
+  font-size: 3.8em;
+  font-family: 'Tilt Neon', sans-serif;
+  margin-bottom: -2px;
+  font-weight: 100;
+  text-align:center;
+  white-space:nowrap;
+} 
+
+.collection_text {
+  font-size: 1.5em;
+  font-family: 'Tilt Neon', sans-serif;
+  font-weight: 300;
+  border-bottom: 3px solid brown;
+  padding: 2px;
+}
+
+.collection_link {
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  font-size: 20px;
+  background-color: rgb(36, 33, 33);
+  color: #fff;
+  font-family: 'Tilt Neon', sans-serif;
+  padding: 16px 30px;
+  border-radius: 50px;
+  transition: background .3s ease-in-out;
+}
+
+.collection_link:hover {
+  background-color: brown;
+}
+
+
+
+/*   SLIDER   */
+.slider {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  margin: 68px auto;
+}
+
+.slider_title {
+  font-family: 'Tilt Neon', sans-serif;
+  font-size: 46px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  margin-left: 40px;
+}
+
+.slider_item {
+  border: 1px solid #000000;
+  border-radius: 10px;
+  box-shadow: 4px 4px 8px rgba(22, 21, 21, 0.2);
+  list-style-type: none;
+}
+
+.card-item-content {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.card-item-licence {
+  font-family: 'Tilt Neon', sans-serif;
+  margin-top: -8px;
+  color: #000000;
+  border-bottom: 3px solid brown;
+}
+
+.card-item-title {
+  font-family: 'Tilt Neon', sans-serif;
+  margin-top: -8px;
+  color: #000000;
+  font-size: 20px;
+}
+
+.card-item-price {
+  font-family: 'Tilt Neon', sans-serif;
+  margin-top: -8px;
+  color: #000000;
+}
+
+.card-item-promo {
+  font-family: 'Tilt Neon', sans-serif;
+  margin-top: -8px;
+  color: #289abd;
+  font-weight: bold;
+}
+
+.card-item-cover {
+  display: flex;
+  position: relative;
+}
+
+.card-item-cover img{
+  animation: fade .7s;
+}
+
+.card-item-img-back {
+  display: none;
+}
+
+.card-item-cover:hover .card-item-img-back {
+  display: block;
+}
+
+.card-item-cover:hover .card-item-img-front {
+  display: none;
+}
+
+.card-item-tag {
+  font-size: 12px;
+  background-color: red;
+  color: white;
+  font-family: 'Chakra Petch', sans-serif;
+  text-transform: uppercase;
+  padding: 6px 12px;
+  position: absolute;
+  border-top-left-radius: 10px;
+}
+
+
+
+/*   ICONS   */
+.glide__arrow--left {
+  left: -58px;
+  color: #000000;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.glide__arrow--right {
+  right: -58px;
+  color: #000000;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+
+
+/*   FOOTER   */
+.footer {
+  background-color: #22252c;
+  padding: 68px;
+  color: #fff
+}
+
+.footer-list {
+  list-style-type: none;
+}
+
+.footer-list a {
+  text-decoration: none;
+  color: #fff
+}
+
+
+.footer-copy {
+  text-align: center;
+  margin-top: 36px;
+}
+
+
+
+/*   ANIMATIONS   */
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

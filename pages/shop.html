@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
+    <link rel="stylesheet" href="../CSS/shop.css">
+</head>
+<body>
+    
+
+                    <!------- Start Header ------->
+        <header>
+            <nav class="navbar container">
+                <picture class="navbar_logo">
+                    <a href="../index.html">
+                        <img src="../images/logo/logo_light_horizontal.svg"  alt="FunkoStore">
+                    </a>
+                </picture>
+            <ul class="navbar_main">
+                    <li class="navbar_item with-submenu">
+                        <a class="navbar_link with-icon" href="./shop.html">SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon> </a>
+                        <ul class="submenu">
+                            <li class="submenu_item">
+                                <a href="" class="submenu_link">FUNKOS</a>
+                            </li>
+                            <li class="submenu_item">
+                                <a href="" class="submenu_link">T-SHIRTS</a>
+                            </li>
+                            <li class="submenu_item">
+                                <a href="" class="submenu_link">KEY CHAINS</a>
+                            </li>
+                        </ul>
+                    </li>
+                <li class="navbar_item">
+                    <a class="navbar_link" href="./contact.html">CONTACT</a>
+                </li>
+                <li class="navbar_item">
+                    <a class="navbar_link" href="./register.html">LOG IN</a>
+                </li>
+                <li class="navbar_item">
+                    <a class="navbar_cart" href="./pages/cart.html">
+                        <img src="../icons/cart-icon.svg" alt="Cart Icon">
+                    </a>
+                </li>
+            </ul>
+            </nav>
+        </header>
+                    <!------- End Header ------->
+
+
+
+    <main>
+
+
+
+                    <!------- Start Filter ------->
+        <div class="filter_part">
+            <ul class="indicator">
+                <li data-filter="all" class="active"><a href="#">All</a></li>
+                <li data-filter="Music"><a href="#">Music</a></li>
+                <li data-filter="Sports"><a href="#">Sports</a></li>
+                <li data-filter="Games and Movies"><a href="#">Games and Movies</a></li>
+            </ul>
+            <div class="filter-condition">
+                <span>View As a</span>
+                <select name="" id="select">
+                    <option value="Default">Default</option>
+                    <option value="LowToHigh">Low to High</option>
+                    <option value="HighToLow">High to Low</option>
+                </select>
+            </div>
+        </div>
+                    <!------- End Filter ------->
+
+
+
+                    <!------- Start Cards ------->
+        <div class="product_field">
+            <ul class="card-item">
+
+                <li id="A100" data-category="" data-price="">
+                    <picture class="card-item-cover">
+                        <img class="card-item-img-front" src="../images/products/Funko_21Savage_1.webp" alt="Funko Pop 21 Savage">
+                        <img class="card-item-img-back" src="../images/products/Funko_21Savage_2.webp" alt="Funko Pop 21 Savage">
+                    </picture>
+                    <div class="card-item-content">
+                        <strong class="card-item-licence">Music</strong>
+                        <h4 class="card-item-title">Funko Pop Elvis Presley</h4>
+                        <p class="card-item-price">$2599.99</p>
+                        <p class="card-item-promo">3 INTEREST-FREE PAYMENT</p>
+                        <small>Buy Now</small>
+                    </div>
+                </li>
+                <li id="A101" data-category="" data-price="">
+                    <picture class="card-item-cover">
+                        <img class="card-item-img-front" src="../images/products/Funko_Curry_1.webp" alt="Funko Pop Curry">
+                        <img class="card-item-img-back" src="../images/products/Funko_Curry_2.webp" alt="Funko Pop Curry">
+                    </picture>
+                    <div class="card-item-content">
+                        <strong class="card-item-licence">Sports</strong>
+                        <h4 class="card-item-title">Funko Pop Curry</h4>
+                        <p class="card-item-price">$2599.99</p>
+                        <p class="card-item-promo">3 INTEREST-FREE PAYMENT</p>
+                        <small>Buy Now</small>
+                    </div>
+                </li>
+                <li id="A102" data-category="" data-price="">
+                    <picture class="card-item-cover">
+                        <img class="card-item-img-front" src="../images/products/Funko_Gandalf_1.webp" alt="Funko Pop Gandalf">
+                        <img class="card-item-img-back" src="../images/products/Funko_Gandalf_2.webp" alt="Funko Pop Gandalf">
+                    </picture>
+                    <div class="card-item-content">
+                        <strong class="card-item-licence">Games and Movies</strong>
+                        <h4 class="card-item-title">Funko Pop Gandalf</h4>
+                        <p class="card-item-price">$2699.99</p>
+                        <p class="card-item-promo">3 INTEREST-FREE PAYMENT</p>
+                        <small>Buy Now</small>
+                    </div>
+                </li>
+                <li id="A103" data-category="" data-price="">
+                    <picture class="card-item-cover">
+                        <img class="card-item-img-front" src="../images/products/Funko_Trooper_1.webp" alt="Funko Pop Trooper">
+                        <img class="card-item-img-back" src="../images/products/Funko_Trooper_2.webp" alt="Funko Pop Trooper">
+                    </picture>
+                    <div class="card-item-content">
+                        <strong class="card-item-licence">Games and Movies</strong>
+                        <h4 class="card-item-title">Funko Pop Tooper</h4>
+                        <p class="card-item-price">$2399.99</p>
+                        <p class="card-item-promo">3 INTEREST-FREE PAYMENT</p>
+                        <small>Buy Now</small>
+                    </div>
+                </li>
+                <li id="A104" data-category="" data-price="">
+                    <picture class="card-item-cover">
+                        <img class="card-item-img-front" src="../images/products/Funko_HarleyQuinn_1.webp" alt="Funko Pop Harley Quinn">
+                        <img class="card-item-img-back" src="../images/products/Funko_HarleyQuinn_2.webp" alt="Funko Pop Harley Quinn">
+                    </picture>
+                    <div class="card-item-content">
+                        <strong class="card-item-licence">Games and Movies</strong>
+                        <h4 class="card-item-title">Funko Pop Harley Quinn</h4>
+                        <p class="card-item-price">$2499.99</p>
+                        <p class="card-item-promo">3 INTEREST-FREE PAYMENT</p>
+                        <small>Buy Now</small>
+                    </div>
+                </li>
+                <li id="A105" data-category="" data-price="">
+                    <picture class="card-item-cover">
+                        <img class="card-item-img-front" src="../images/products/Funko_Elvis_1.webp" alt="Funko Pop Elvis Presley">
+                        <img class="card-item-img-back" src="../images/products/Funko_Elvis_2.webp" alt="Funko Pop Elvis Presley">
+                    </picture>
+                    <div class="card-item-content">
+                        <strong class="card-item-licence">Music</strong>
+                        <h4 class="card-item-title">Funko Pop Elvis Presley</h4>
+                        <p class="card-item-price">$2799.99</p>
+                        <p class="card-item-promo">3 INTEREST-FREE PAYMENT</p>
+                        <small>Buy Now</small>
+                    </div>
+                </li>
+                <li id="A106" data-category="" data-price="">
+                    <picture class="card-item-cover">
+                        <img class="card-item-img-front" src="../images/products/Funko_Hendrix_1.webp" alt="Funko Pop Jimmy Hendrix">
+                        <img class="card-item-img-back" src="../images/products/Funko_Hendrix_2.webp" alt="Funko Pop Jimmy Hendrix">
+                    </picture>
+                    <div class="card-item-content">
+                        <strong class="card-item-licence">Music</strong>
+                        <h4 class="card-item-title">Funko Pop Jimmy Hendrix</h4>
+                        <p class="card-item-price">$2699.99</p>
+                        <p class="card-item-promo">3 INTEREST-FREE PAYMENT</p>
+                        <small>Buy Now</small>
+                    </div>
+                </li>
+                <li id="A107" data-category="" data-price="">
+                    <picture class="card-item-cover">
+                        <img class="card-item-img-front" src="../images/products/Funko_Inarius_1.webp" alt="Funko Pop Inarius">
+                        <img class="card-item-img-back" src="../images/products/Funko_Inarius_2.webp" alt="Funko Pop Inarius">
+                    </picture>
+                    <div class="card-item-content">
+                        <strong class="card-item-licence">Games and Movies</strong>
+                        <h4 class="card-item-title">Funko Pop Inarius</h4>
+                        <p class="card-item-price">$2699.99</p>
+                        <p class="card-item-promo">3 INTEREST-FREE PAYMENT</p>
+                        <small>Buy Now</small>
+                    </div>
+                </li>
+                <li id="A108" data-category="" data-price="">
+                    <picture class="card-item-cover">
+                        <img class="card-item-img-front" src="../images/products/Funko_LeBron_1.webp" alt="Funko Pop LeBron">
+                        <img class="card-item-img-back" src="../images/products/Funko_LeBron_2.webp" alt="Funko Pop LeBron">
+                    </picture>
+                    <div class="card-item-content">
+                        <strong class="card-item-licence">Sports</strong>
+                        <h4 class="card-item-title">Funko Pop LeBrons James</h4>
+                        <p class="card-item-price">$2799.99</p>
+                        <p class="card-item-promo">3 INTEREST-FREE PAYMENT</p>
+                        <small>Buy Now</small>
+                    </div>
+                </li>
+                <li id="A109" data-category="" data-price="">
+                    <picture class="card-item-cover">
+                        <img class="card-item-img-front" src="../images/products/Funko_Michael Jackson_1.webp" alt="Funko Pop Michael Jackson">
+                        <img class="card-item-img-back" src="../images/products/Funko_Michael Jackson_2.webp" alt="Funko Pop Michael Jackson">
+                    </picture>
+                    <div class="card-item-content">
+                        <strong class="card-item-licence">Music</strong>
+                        <h4 class="card-item-title">Funko Pop Michael Jackson</h4>
+                        <p class="card-item-price">$2799.99</p>
+                        <p class="card-item-promo">3 INTEREST-FREE PAYMENT</p>
+                        <small>Buy Now</small>
+                    </div>
+                </li>
+                <li id="A110" data-category="" data-price="">
+                    <picture class="card-item-cover">
+                        <img class="card-item-img-front" src="../images/products/Funko_MJ_1.webp" alt="Funko Pop Michael Jordan">
+                        <img class="card-item-img-back" src="../images/products/Funko_MJ_2.webp" alt="Funko Pop Michael Jordan">
+                    </picture>
+                    <div class="card-item-content">
+                        <strong class="card-item-licence">Sports</strong>
+                        <h4 class="card-item-title">Funko Pop Michael Jordan</h4>
+                        <p class="card-item-price">$2799.99</p>
+                        <p class="card-item-promo">3 INTEREST-FREE PAYMENT</p>
+                        <small>Buy Now</small>
+                    </div>
+                </li>
+                <li id="A111" data-category="" data-price="">
+                    <picture class="card-item-cover">
+                        <img class="card-item-img-front" src="../images/products/Funko_R2D2_1.webp" alt="Funko Pop R2D2">
+                        <img class="card-item-img-back" src="../images/products/Funko_R2D2_2.webp" alt="Funko Pop R2D2">
+                    </picture>
+                    <div class="card-item-content">
+                        <strong class="card-item-licence">Games and Movies</strong>
+                        <h4 class="card-item-title">Funko Pop R2D2</h4>
+                        <p class="card-item-price">$2599.99</p>
+                        <p class="card-item-promo">3 INTEREST-FREE PAYMENT</p>
+                        <small>Buy Now</small>
+                    </div>
+                </li>
+                <li id="A112" data-category="" data-price="">
+                    <picture class="card-item-cover">
+                        <img class="card-item-img-front" src="../images/products/Funko_Sally_1.webp" alt="Funko Pop Sally">
+                        <img class="card-item-img-back" src="../images/products/Funko_Sally_2.webp" alt="Funko Pop Sally">
+                    </picture>
+                    <div class="card-item-content">
+                        <strong class="card-item-licence">Games and Movies</strong>
+                        <h4 class="card-item-title">Funko Pop Sally</h4>
+                        <p class="card-item-price">$2599.99</p>
+                        <p class="card-item-promo">3 INTEREST-FREE PAYMENT</p>
+                        <small>Buy Now</small>
+                    </div>
+                </li>
+                <li id="A113" data-category="" data-price="">
+                    <picture class="card-item-cover">
+                        <img class="card-item-img-front" src="../images/products/Funko_Snoop_1.webp" alt="Funko Pop Snoop Dogg">
+                        <img class="card-item-img-back" src="../images/products/Funko_Snoop_2.webp" alt="Funko Pop Snoop Dogg">
+                    </picture>
+                    <div class="card-item-content">
+                        <strong class="card-item-licence">Music</strong>
+                        <h4 class="card-item-title">Funko Pop Snoop Dogg</h4>
+                        <p class="card-item-price">$2699.99</p>
+                        <p class="card-item-promo">3 INTEREST-FREE PAYMENT</p>
+                        <small>Buy Now</small>
+                    </div>
+                </li>
+                <li id="A114" data-category="" data-price="">
+                    <picture class="card-item-cover">
+                        <img class="card-item-img-front" src="../images/products/Funko_Sonic_1.webp" alt="Funko Pop Sonic">
+                        <img class="card-item-img-back" src="../images/products/Funko_Sonic_2.webp" alt="Funko Pop Sonic">
+                    </picture>
+                    <div class="card-item-content">
+                        <strong class="card-item-licence">Games and Movies</strong>
+                        <h4 class="card-item-title">Funko Pop Sonic</h4>
+                        <p class="card-item-price">$2599.99</p>
+                        <p class="card-item-promo">3 INTEREST-FREE PAYMENT</p>
+                        <small>Buy Now</small>
+                    </div>
+                </li>
+                <li id="A115" data-category="" data-price="">
+                    <picture class="card-item-cover">
+                        <img class="card-item-img-front" src="../images/products/Funko_SonnyCorleone_1.webp" alt="Funko Pop Sonny Corleone">
+                        <img class="card-item-img-back" src="../images/products/Funko_SonnyCorleone_2.webp" alt="Funko Pop Sonny Corleone">
+                    </picture>
+                    <div class="card-item-content">
+                        <strong class="card-item-licence">Games and Movies</strong>
+                        <h4 class="card-item-title">Funko Pop Sonny Corleone</h4>
+                        <p class="card-item-price">$2699.99</p>
+                        <p class="card-item-promo">3 INTEREST-FREE PAYMENT</p>
+                        <small>Buy Now</small>
+                    </div>
+                </li>
+                <li id="A116" data-category="" data-price="">
+                    <picture class="card-item-cover">
+                        <img class="card-item-img-front" src="../images/products/Funko_Spiderman_1.webp" alt="Funko Pop Spiderman">
+                        <img class="card-item-img-back" src="../images/products/Funko_Spiderman_2.webp" alt="Funko Pop Spiderman">
+                    </picture>
+                    <div class="card-item-content">
+                        <strong class="card-item-licence">Games and Movies</strong>
+                        <h4 class="card-item-title">Funko Pop Spiderman</h4>
+                        <p class="card-item-price">$2599.99</p>
+                        <p class="card-item-promo">3 INTEREST-FREE PAYMENT</p>
+                        <small>Buy Now</small>
+                    </div>
+                </li>
+                <li id="A117" data-category="" data-price="">
+                    <picture class="card-item-cover">
+                        <img class="card-item-img-front" src="../images/products/Funko_TheRock_1.webp" alt="Funko Pop The Rock">
+                        <img class="card-item-img-back" src="../images/products/Funko_TheRock_2.webp" alt="Funko Pop The Rock">
+                    </picture>
+                    <div class="card-item-content">
+                        <strong class="card-item-licence">Sports</strong>
+                        <h4 class="card-item-title">Funko Pop The Rock</h4>
+                        <p class="card-item-price">$2599.99</p>
+                        <p class="card-item-promo">3 INTEREST-FREE PAYMENT</p>
+                        <small>Buy Now</small>
+                    </div>
+                </li>
+                <li id="A118" data-category="" data-price="">
+                    <picture class="card-item-cover">
+                        <img class="card-item-img-front" src="../images/products/Funko_TomBrady_1.webp" alt="Funko Pop Tom Brady">
+                        <img class="card-item-img-back" src="../images/products/Funko_TomBrady_2.webp" alt="Funko Pop Tom Brady">
+                    </picture>
+                    <div class="card-item-content">
+                        <strong class="card-item-licence">Sports</strong>
+                        <h4 class="card-item-title">Funko Pop Tom Brady</h4>
+                        <p class="card-item-price">$2699.99</p>
+                        <p class="card-item-promo">3 INTEREST-FREE PAYMENT</p>
+                        <small>Buy Now</small>
+                    </div>
+                </li>
+                <li id="A119" data-category="" data-price="">
+                    <picture class="card-item-cover">
+                        <img class="card-item-img-front" src="../images/products/Funko_Vader_1.webp" alt="Funko Pop Darth Vader">
+                        <img class="card-item-img-back" src="../images/products/Funko_Vader_2.webp" alt="Funko Pop Darth Vader">
+                    </picture>
+                    <div class="card-item-content">
+                        <strong class="card-item-licence">Games and Movies</strong>
+                        <h4 class="card-item-title">Funko Pop Darth Vader</h4>
+                        <p class="card-item-price">$2699.99</p>
+                        <p class="card-item-promo">3 INTEREST-FREE PAYMENT</p>
+                        <small>Buy Now</small>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+                    <!------- End Cards ------->
+
+
+
+    </main>
+
+
+
+                    <!------- Start Footer ------->
+    <footer class="footer">
+            <nav class="navbar container">
+                    <ul class="footer-list">
+                        <li class="navbar_item"><a class="navbar_link" href="./pages/about.html">About</a></li>
+                        <li class="navbar_item"><a class="navbar_link" href="./shop.html">Shop</a></li>
+                        <li class="navbar_item"><a class="navbar_link" href="./contact.html">Contact</a></li>
+                        <li class="navbar_item"><a class="navbar_link" href="./register.html">Log In</a></li>
+                    </ul>
+                <picture>
+                    <img src="../images/logo/logo_light_horizontal.svg" alt="FunkoStore">
+                </picture>
+            </nav>
+            <p class="footer-copy">© Funko. All rights reserved 2023 - FunkoStore &copy</p>
+    </footer>
+                    <!------- End Footer ------->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+</html>
+<script type="text/javascript" src="../JS/main.js"></script>
+<script type="text/javascript" src="../JS/cart.js"></script>

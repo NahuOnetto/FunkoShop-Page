@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cart</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
+    <link rel="stylesheet" href="../CSS/cart.css">
+</head>
+<body>
+    
+
+                    <!------- Start Header ------->
+        <header>
+            <nav class="navbar container">
+                <picture class="navbar_logo">
+                    <a href="../index.html">
+                        <img src="../images/logo/logo_light_horizontal.svg"  alt="FunkoStore">
+                    </a>
+                </picture>
+            <ul class="navbar_main">
+                    <li class="navbar_item with-submenu">
+                        <a class="navbar_link with-icon" href="../pages/shop.html">SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon> </a>
+                        <ul class="submenu">
+                            <li class="submenu_item">
+                                <a href="" class="submenu_link">FUNKOS</a>
+                            </li>
+                            <li class="submenu_item">
+                                <a href="" class="submenu_link">T-SHIRTS</a>
+                            </li>
+                            <li class="submenu_item">
+                                <a href="" class="submenu_link">KEY CHAINS</a>
+                            </li>
+                        </ul>
+                    </li>
+                <li class="navbar_item">
+                    <a class="navbar_link" href="./contact.html">CONTACT</a>
+                </li>
+                <li class="navbar_item">
+                    <a class="navbar_link" href="./register.html">LOG IN</a>
+                </li>
+                <li class="navbar_item">
+                    <a class="navbar_cart" href="../pages/cart.html">
+                        <img src="../icons/cart-icon.svg" alt="Cart Icon">
+                    </a>
+                </li>
+            </ul>
+            </nav>
+        </header>
+                    <!------- End Header ------->
+
+
+
+<main>
+    <section class="container content-section" id="shopping-cart">
+        <h3 style="text-decoration: underline;text-align: center; margin-bottom: 7%;">Shopping Cart</h3>
+        <table class="table table-hover table-cart">
+            <thead>
+                <tr>
+                <th>Item</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                </tr>
+            </thead>
+        </table>
+        <div class="cart-total"> 
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price" style="text-align: right;">$0</span>
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="../pages/shop.html">Back to Product Page</a>
+        </div>
+        <div class="btn-purchase" style="margin-top: 10%;">
+            <button type="button" class="btn btn-dark btn-purchase"><i class="fa-solid fa-cart-shopping" style="margin-right: 6%;"></i>PURCHASE</button>
+        </div>
+    </section>
+</main>
+
+
+
+                    <!------- Start Footer ------->
+                    <footer class="footer">
+                        <nav class="navbar container">
+                                <ul class="footer-list">
+                                    <li class="navbar_item"><a class="navbar_link" href="./pages/about.html">About</a></li>
+                                    <li class="navbar_item"><a class="navbar_link" href="./shop.html">Shop</a></li>
+                                    <li class="navbar_item"><a class="navbar_link" href="./contact.html">Contact</a></li>
+                                    <li class="navbar_item"><a class="navbar_link" href="./register.html">Log In</a></li>
+                                </ul>
+                            <picture>
+                                <img src="../images/logo/logo_light_horizontal.svg" alt="FunkoStore">
+                            </picture>
+                        </nav>
+                        <p class="footer-copy">© Funko. All rights reserved 2023 - FunkoStore &copy</p>
+                </footer>
+                                <!------- End Footer ------->
+            
+            
+                <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+                <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+                <script src="../JS/cart.js"></script>
+            </body>
+            </html>
